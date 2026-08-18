@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Become a ProgramMetrics Beta Tester</title>
+    <meta name="description" content="Apply to test ProgramMetrics using fictional or fully de-identified spreadsheet data." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles-20260610.css?v=20260812-beta-launch-copy-cleanup" />
+    <script src="beta-testers.js?v=20260802-beta-application" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#top">ProgramMetrics</a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#top">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="one-time-analytics.html">One-Time Analytics</a>
+        <a href="studio-subscriptions.html">Studio Subscriptions</a>
+        <a href="templates-workflow-apps.html">Templates &amp; Workflow Apps</a>
+        <a href="security-data-use.html">Security &amp; Data Use</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero beta-hero">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="badge">Limited private beta</p>
+            <h1>Help shape a simpler way to turn messy spreadsheets into decision-ready insights.</h1>
+            <p class="hero-subtitle">ProgramMetrics is preparing for a limited private beta. Selected testers will receive early access at no real cost in exchange for honest feedback about the experience, results, and features. To test the full purchase-to-access workflow, selected testers may be asked to complete a $49 Stripe test-mode checkout. No real payment is processed.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#apply">Apply for Beta Access</a>
+              <a class="button secondary" href="security-data-use.html">Review Data Rules</a>
+            </div>
+          </div>
+          <aside class="beta-overview-card reveal" aria-label="Beta testing overview">
+            <p class="template-label">What to expect</p>
+            <h2>Early access with clear safeguards</h2>
+            <ul class="beta-check-list">
+              <li>Test the spreadsheet-to-insights experience</li>
+              <li>Use only fictional or fully de-identified data</li>
+              <li>Share practical feedback on results and usability</li>
+              <li>No real payment is required during the controlled beta</li>
+              <li>Selected testers may use Stripe test mode to exercise the checkout flow</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section beta-application-section" id="apply">
+        <div class="section-title reveal">
+          <p class="template-label">Beta tester application</p>
+          <h2>Tell us how you work with spreadsheet data.</h2>
+          <p>This application asks about your interests only. Do not attach, paste, describe, or send any customer, client, employee, student, patient, participant, or other record-level data.</p>
+        </div>
+
+        <div class="beta-form-layout">
+          <form class="beta-application-form reveal" id="beta-application-form" action="https://formspree.io/f/xlgqqdok" method="post">
+            <input type="hidden" name="_subject" value="New ProgramMetrics beta tester application" />
+            <label class="beta-honeypot" aria-hidden="true">
+              Leave this field blank
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+            </label>
+            <div class="beta-form-grid">
+              <label>
+                Name <span aria-hidden="true">*</span>
+                <input type="text" name="name" autocomplete="name" required maxlength="100" />
+              </label>
+              <label>
+                Email address <span aria-hidden="true">*</span>
+                <input type="email" name="email" autocomplete="email" required maxlength="150" />
+              </label>
+              <label>
+                Organization or business name
+                <input type="text" name="organization" autocomplete="organization" maxlength="150" />
+              </label>
+              <label>
+                Your role
+                <input type="text" name="role" autocomplete="organization-title" maxlength="120" />
+              </label>
+              <label>
+                Organization type <span aria-hidden="true">*</span>
+                <select name="organizationType" required>
+                  <option value="">Select one</option>
+                  <option>Small or midsize business</option>
+                  <option>Research or consulting</option>
+                  <option>Nonprofit or foundation</option>
+                  <option>Education or training</option>
+                  <option>Government or public service</option>
+                  <option>Healthcare or social service</option>
+                  <option>Technology or SaaS</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>
+                Typical dataset size <span aria-hidden="true">*</span>
+                <select name="datasetSize" required>
+                  <option value="">Select one</option>
+                  <option>Under 1,000 rows</option>
+                  <option>1,000 to 10,000 rows</option>
+                  <option>More than 10,000 rows</option>
+                  <option>Not sure</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              What type of spreadsheet data do you typically work with? <span aria-hidden="true">*</span>
+              <textarea name="dataType" rows="3" required maxlength="500" placeholder="For example: sales, operations, survey responses, or program performance. Describe the general category only."></textarea>
+            </label>
+
+            <label>
+              What part of working with spreadsheets causes the most frustration? <span aria-hidden="true">*</span>
+              <textarea name="challenge" rows="4" required maxlength="800" placeholder="For example: duplicates, missing values, cleaning, choosing analyses, building visuals, or summarizing results."></textarea>
+            </label>
+
+            <fieldset>
+              <legend>Which features are you most interested in testing? <span aria-hidden="true">*</span></legend>
+              <div class="beta-checkbox-grid">
+                <label><input type="checkbox" name="features" value="Data quality and cleaning guidance" /> Data quality and cleaning guidance</label>
+                <label><input type="checkbox" name="features" value="Automated analysis" /> Automated analysis</label>
+                <label><input type="checkbox" name="features" value="Visualizations" /> Visualizations</label>
+                <label><input type="checkbox" name="features" value="Plain-language findings" /> Plain-language findings</label>
+                <label><input type="checkbox" name="features" value="Downloadable outputs" /> Downloadable outputs</label>
+              </div>
+            </fieldset>
+
+            <label class="beta-confirmation">
+              <input type="checkbox" name="feedbackAgreement" required />
+              <span>I am willing to provide honest feedback about the beta experience, results, and features.</span>
+            </label>
+
+            <label class="beta-confirmation beta-safety-confirmation">
+              <input type="checkbox" name="dataAgreement" required />
+              <span>I understand that beta testing is limited to fictional or fully de-identified data. In any future beta dataset, I will not submit names, addresses, email addresses, phone numbers, Social Security numbers, medical information, student records, payment information, confidential case notes, or other identifiable or sensitive information.</span>
+            </label>
+
+            <label class="beta-confirmation">
+              <input type="checkbox" name="termsAgreement" required />
+              <span>I have reviewed the <a href="privacy-policy.html">Privacy &amp; Security Rules</a> and <a href="terms-of-service.html">Terms of Service</a>. I understand that applying does not guarantee selection.</span>
+            </label>
+
+            <p class="beta-form-note">Applications are securely submitted through Formspree and delivered to ProgramMetrics. Do not include or send any spreadsheet, record-level information, or sensitive data.</p>
+            <p class="beta-form-error" id="beta-form-error" role="alert" hidden></p>
+            <p class="beta-form-success" id="beta-form-success" role="status" tabindex="-1" hidden>Thank you for your interest in ProgramMetrics. Your beta application has been received. If selected, you will receive testing instructions by email. Please do not send or upload any data at this time.</p>
+            <button class="button primary beta-submit-button" type="submit">Apply for Beta Access</button>
+          </form>
+
+          <aside class="beta-safety-card reveal" aria-label="Beta application safety rules">
+            <p class="template-label">Before you apply</p>
+            <h3>No data files are requested.</h3>
+            <p>This form is only for beta interest and tester selection. It does not accept uploads, activate Studio, perform analysis, or create a real payment.</p>
+            <p><strong>Please do not email a spreadsheet or include record-level details in your application.</strong></p>
+            <a class="text-link" href="security-data-use.html">Read the full Security &amp; Data Use policy</a>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2026 ProgramMetrics. All Rights Reserved.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="security-data-use.html">Security &amp; Data Use</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="refund-liability-policy.html">Refund &amp; Liability Policy</a>
+      </nav>
+    </footer>
+  </body>
+</html>

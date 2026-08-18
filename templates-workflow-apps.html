@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Templates &amp; Workflow Apps | ProgramMetrics</title>
+  <meta name="description" content="ProgramMetrics Starter templates, future paid Pro templates, and a privacy-bounded template feedback form.">
+  <link rel="stylesheet" href="styles-20260610.css?v=20260804-visible-content">
+  <script src="template-feedback.js?v=20260810-template-feedback" defer></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html#top">ProgramMetrics</a><nav aria-label="Primary navigation">
+        <a href="index.html#top">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="one-time-analytics.html">One-Time Analytics</a>
+        <a href="studio-subscriptions.html">Studio Subscriptions</a>
+        <a href="templates-workflow-apps.html">Templates &amp; Workflow Apps</a>
+        <a href="security-data-use.html">Security &amp; Data Use</a>
+        <a href="contact.html">Contact</a>
+      </nav></header>
+<main id="top">
+  <section class="hero"><div class="hero-grid"><div class="hero-copy"><p class="badge">Starter workbook set &mdash; release pending</p><h1>Explore repeatable templates and workflow apps.</h1><p class="hero-subtitle">Four formula-driven Starter workbooks are approved for a future free release. Downloads are not yet available, and customer access is currently unavailable while delivery and feedback safeguards are completed. New paid Pro editions will add materially deeper automation, reporting, documentation, updates, and support.</p><div class="hero-actions"><a class="button primary" href="#catalog">View Starter catalog</a><a class="button secondary" href="#template-feedback">Share template feedback</a></div></div><figure class="hero-dashboard" aria-label="Starter workbook collection concept preview"><img src="images/starter-workbooks-preview.svg?v=20260812" alt="Concept preview of four planned Starter workbooks for program evaluation, monthly reporting, referral tracking, and survey reporting using fictional data" /></figure></div></section>
+  <section class="section" id="catalog"><div class="section-title"><h2>Starter workbook catalog</h2><p>Each planned Starter edition is a formula-driven Excel workbook with a Start Here guide, structured Data Entry table, KPI Dashboard, Codebook, synthetic sample records, and de-identified-data instructions. Downloads, purchasing, and customer access remain unavailable.</p></div><div class="card-grid">
+    <article class="card"><p class="template-label">Planned free Starter workbook</p><h3>Program Evaluation Dashboard</h3><p>Program activity, service connections, outcome-to-target reporting, monthly summaries, and leadership-ready KPI views.</p><a class="text-link" href="program-evaluation-dashboard-template.html">Review Starter scope</a></article>
+    <article class="card"><p class="template-label">Planned free Starter workbook</p><h3>Monthly Reporting Automation</h3><p>Recurring source refreshes, due dates, validation status, issue counts, report readiness, and monthly workflow views.</p><a class="text-link" href="monthly-reporting-automation-template.html">Review Starter scope</a></article>
+    <article class="card"><p class="template-label">Planned free Starter workbook</p><h3>Referral &amp; Service Tracking</h3><p>Referral flow, connection status, elapsed days, follow-up deadlines, overdue flags, and service-category summaries.</p><a class="text-link" href="referral-service-tracker-template.html">Review Starter scope</a></article>
+    <article class="card"><p class="template-label">Planned free Starter workbook</p><h3>Survey Reporting</h3><p>Structured response monitoring, completion checks, score summaries, survey-wave trends, and broad group views without open text.</p><a class="text-link" href="survey-reporting-template.html">Review Starter scope</a></article>
+  </div></section>
+  <section class="section beta-application-section" id="template-feedback">
+    <div class="section-title reveal">
+      <p class="template-label">Template feedback</p>
+      <h2>Help shape the Starter and Pro template catalog.</h2>
+      <p>Tell us which Starter workbook interests you, what would make it more useful, and what other templates you would like to see. Do not paste spreadsheet data, organization-specific details, names, identifiers, filenames, credentials, payment information, or confidential or regulated information.</p>
+    </div>
+    <div class="beta-form-layout">
+      <form class="beta-application-form reveal" id="template-feedback-form" action="https://formspree.io/f/xlgqqdok" method="post">
+        <input type="hidden" name="_subject" value="New ProgramMetrics template feedback" />
+        <input type="hidden" name="source" value="Template gallery feedback" />
+        <label class="beta-honeypot" aria-hidden="true">
+          Leave this field blank
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+        </label>
+        <div class="beta-form-grid">
+          <label>
+            Starter template <span aria-hidden="true">*</span>
+            <select name="templateUsed" required>
+              <option value="">Select one</option>
+              <option>Program Evaluation Dashboard</option>
+              <option>Monthly Reporting Automation</option>
+              <option>Referral &amp; Service Tracking</option>
+              <option>Survey Reporting</option>
+              <option>I have not used one yet</option>
+            </select>
+          </label>
+          <label>
+            Current experience <span aria-hidden="true">*</span>
+            <select name="experienceRating" required>
+              <option value="">Select one</option>
+              <option>Not used yet &mdash; sharing an idea</option>
+              <option>1 &mdash; difficult to use</option>
+              <option>2 &mdash; needs substantial improvement</option>
+              <option>3 &mdash; useful starting point</option>
+              <option>4 &mdash; very useful</option>
+              <option>5 &mdash; excellent</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          What works well, feels confusing, or would make this Starter template more useful? <span aria-hidden="true">*</span>
+          <textarea name="starterFeedback" rows="5" required maxlength="1000" placeholder="Describe the workflow or feature in general terms only. Do not paste data, field names, filenames, or confidential details."></textarea>
+        </label>
+        <label>
+          What other type of template would you like ProgramMetrics to create?
+          <textarea name="requestedTemplate" rows="4" maxlength="600" placeholder="For example: grant reporting, attendance, service utilization, outcomes tracking, or board reporting."></textarea>
+        </label>
+        <fieldset>
+          <legend>Which paid Pro capabilities would save you the most time?</legend>
+          <div class="beta-checkbox-grid">
+            <label><input type="checkbox" name="paidFeatures" value="Advanced validation and automated flags" /> Advanced validation and automated flags</label>
+            <label><input type="checkbox" name="paidFeatures" value="Multiple programs or reporting periods" /> Multiple programs or reporting periods</label>
+            <label><input type="checkbox" name="paidFeatures" value="Additional dashboards and print-ready reports" /> Additional dashboards and print-ready reports</label>
+            <label><input type="checkbox" name="paidFeatures" value="Funder board or leadership reporting" /> Funder, board, or leadership reporting</label>
+            <label><input type="checkbox" name="paidFeatures" value="Branding and configuration options" /> Branding and configuration options</label>
+            <label><input type="checkbox" name="paidFeatures" value="Setup guidance updates and support" /> Setup guidance, updates, and support</label>
+          </div>
+        </fieldset>
+        <div class="beta-form-grid">
+          <label>
+            Email address (optional)
+            <input type="email" name="email" autocomplete="email" maxlength="150" placeholder="Only if you would like a reply" />
+          </label>
+        </div>
+        <label class="beta-confirmation">
+          <input type="checkbox" name="followUpConsent" />
+          <span>If I provide an email address, ProgramMetrics may contact me about this feedback. This does not subscribe me to unrelated marketing.</span>
+        </label>
+        <label class="beta-confirmation">
+          <input type="checkbox" name="feedbackUseAgreement" required />
+          <span>ProgramMetrics may use my feedback and requested-template ideas to improve or prioritize its template catalog.</span>
+        </label>
+        <label class="beta-confirmation beta-safety-confirmation">
+          <input type="checkbox" name="templateSafetyAgreement" required />
+          <span>I have not included a dataset, record-level information, names, identifiers, organization-specific confidential details, payment information, credentials, or regulated or sensitive information.</span>
+        </label>
+        <p class="beta-form-note">Feedback is submitted through Formspree and delivered to ProgramMetrics. Review the <a href="privacy-policy.html">Privacy Policy</a> and Formspree disclosure before submitting. This form does not provide a download, purchase, analysis, or customer account.</p>
+        <p class="beta-form-error" id="template-feedback-error" role="alert" tabindex="-1" hidden></p>
+        <p class="beta-form-success" id="template-feedback-success" role="status" tabindex="-1" hidden>Thank you. Your template feedback has been received. Please do not send a workbook, dataset, or record-level information in a follow-up message.</p>
+        <button class="button primary beta-submit-button" type="submit">Send Template Feedback</button>
+      </form>
+      <aside class="beta-safety-card reveal" aria-label="Template feedback boundaries">
+        <p class="template-label">Feedback only</p>
+        <h3>No files or customer data.</h3>
+        <p>Share general workflow needs, usability observations, and template ideas. The form does not accept attachments and should not contain details copied from a workbook or information about a specific client, participant, patient, student, employee, or customer.</p>
+        <p><strong>Email is optional and used only to reply about the feedback when you request follow-up.</strong></p>
+        <a class="text-link" href="security-data-use.html">Read the full Security &amp; Data Use policy</a>
+      </aside>
+    </div>
+  </section>
+  <section class="section problems"><div class="section-title"><h2>Future license and support boundaries</h2></div><div class="card-grid"><article class="card"><h3>Defined use</h3><p>When available, use rights will follow the license attached to the selected item. Redistribution, resale, or use outside that future license is not implied.</p></article><article class="card"><h3>Named compatibility</h3><p>Each future offer will identify its input and environment requirements before customer access becomes available.</p></article><article class="card"><h3>Stated support</h3><p>Future setup guidance, updates, and support will be limited to what the published listing expressly includes.</p></article></div></section>
+</main>
+<footer><p>Copyright © 2026 ProgramMetrics. All Rights Reserved.</p><nav class="footer-legal" aria-label="Legal links"><a href="security-data-use.html">Security &amp; Data Use</a><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a></nav></footer>
+</body></html>
