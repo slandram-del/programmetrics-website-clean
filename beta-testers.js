@@ -10,6 +10,8 @@
 
   if (!form || !errorMessage || !successMessage || !submitButton) return;
 
+  const submitLabel = submitButton.textContent;
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     errorMessage.hidden = true;
@@ -41,12 +43,12 @@
       successMessage.hidden = false;
       successMessage.focus();
     } catch {
-      errorMessage.textContent = "We could not submit your application. Please try again. If the problem continues, contact hello@programmetrics.io without including any data files or sensitive information.";
+      errorMessage.textContent = "We could not register your interest. Please try again. If the problem continues, contact hello@programmetrics.io without including any data files or sensitive information.";
       errorMessage.hidden = false;
       errorMessage.focus();
     } finally {
       submitButton.disabled = false;
-      submitButton.textContent = "Apply for Beta Access";
+      submitButton.textContent = submitLabel;
     }
   });
 })();
