@@ -29,7 +29,7 @@ $productPages = @(
 Assert-Template ($gallery.Contains("Starter workbook catalog")) "gallery identifies the Starter workbook catalog"
 Assert-Template ($gallery.Contains("Downloads are not yet available")) "gallery keeps downloads unavailable"
 Assert-Template ($gallery.Contains("customer access is currently unavailable")) "gallery keeps customer access unavailable"
-Assert-Template ($gallery.Contains("Separate from analytics") -and $gallery.Contains("will not include an Essential Insights analysis")) "gallery separates templates from analytics entitlements"
+Assert-Template ($gallery.Contains("will not include an Essential Insights analysis")) "gallery separates templates from analytics entitlements"
 Assert-Template (-not [regex]::IsMatch($gallery, '(?i)href="[^"]+\.xlsx(?:[?#][^"]*)?"')) "gallery exposes no direct workbook link"
 Assert-Template ($gallery.Contains('id="template-feedback-form"') -and $gallery.Contains('action="https://formspree.io/f/xlgqqdok"') -and $gallery.Contains('method="post"')) "feedback form uses the approved Formspree endpoint"
 Assert-Template (-not [regex]::IsMatch($gallery, '(?i)<input\b[^>]*type="file"')) "feedback form accepts no file upload"

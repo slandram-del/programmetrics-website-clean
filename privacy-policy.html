@@ -28,6 +28,7 @@
       <p>ProgramMetrics collects only information needed to operate the website, evaluate beta applications, provide account access, support the controlled beta, maintain transaction and entitlement records, and respond to support requests.</p>
       <ul>
         <li><strong>Website and beta applications:</strong> name, email address, optional organization and role, general organization type, general dataset-size category, product interests, and general workflow feedback submitted through the beta application.</li>
+        <li><strong>Template feedback:</strong> Formspree processes the selected template, experience rating, feedback and requested features. You may include your email for follow-up when you consent.</li>
         <li><strong>Account access:</strong> email-based authentication and the technical account/session information needed to authenticate a user and verify Essential Insights access.</li>
         <li><strong>Controlled-beta transaction records:</strong> test-mode checkout, transaction, entitlement, allowance, refund-review, and related service-status metadata. The controlled beta uses Stripe test mode and does not process a real payment.</li>
         <li><strong>Support:</strong> reply email, issue category, approximate time, timezone, browser information, an optional ProgramMetrics reference, and a short description. Support requests must not contain dataset contents, payment details, credentials, or other customer-level data.</li>
@@ -35,7 +36,7 @@
 
       <h2>Customer datasets and browser-local processing</h2>
       <p>Essential Insights is limited to one eligible, properly de-identified UTF-8 CSV that the customer is authorized to analyze. The controlled-beta application is designed to process the selected CSV in the customer's browser session. The source CSV is not intended to be uploaded to ProgramMetrics, Supabase, Stripe, Netlify, Formspree, or another vendor as part of the analysis.</p>
-      <p>The selected file is held in browser memory for the active session and is not restored after the customer removes the file, refreshes, or ends the session. Customers must download any approved outputs they want to keep before ending the session.</p>
+      <p>Browser-local processing does not eliminate privacy or re-identification risk. The selected file is held in browser memory for the active session and is not restored after the customer removes the file, refreshes, or ends the session. Customers must download any approved outputs they want to keep before ending the session.</p>
       <p>Automated screening is a supplemental safeguard only. It may not detect every identifier and does not certify legal de-identification.</p>
 
       <h2>Prohibited data</h2>
