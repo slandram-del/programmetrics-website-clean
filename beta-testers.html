@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Become a ProgramMetrics Beta Tester</title>
+    <title>Essential Insights | Beta interest</title>
     <meta name="description" content="Register interest in a future invitation-only beta for ProgramMetrics Essential Insights." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles-20260610.css?v=20260812-beta-launch-copy-cleanup" />
-    <script src="beta-testers.js?v=20260802-beta-application" defer></script>
+    <script src="beta-testers.js?v=20261117-beta-interest" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -29,38 +29,35 @@
       <section class="hero beta-hero">
         <div class="hero-grid">
           <div class="hero-copy reveal">
-            <p class="badge">Limited private beta</p>
-            <h1>Help us shape a practical, affordable way to understand program data.</h1>
-            <p class="hero-subtitle">ProgramMetrics is preparing an invitation-only beta. This page collects interest only. It does not provide access or enroll you. Beta admission will wait until required privacy and authorization checks are complete and the owner separately approves release. If the beta opens, it will use synthetic or fully de-identified eligible CSV data and no real payment. Essential Insights is planned at $49 per analysis order, a one-time price, not a subscription.</p>
+            <p class="badge">Invitation-only beta in preparation</p>
+            <h1>Find out what your program spreadsheet can tell you.</h1>
+            <p class="hero-subtitle">Essential Insights checks one CSV for missing values and summarizes the numbers your data support. Download a PDF summary, an analysis CSV and a PNG of the visuals. The planned price is $49 per analysis order. You can register interest in a future, no-charge beta using our sample file.</p>
             <div class="hero-actions">
               <a class="button primary" href="#apply">Register Interest</a>
               <a class="button secondary" href="security-data-use.html">Review Data Rules</a>
             </div>
           </div>
           <aside class="beta-overview-card reveal" aria-label="Beta testing overview">
-            <p class="template-label">What to expect</p>
-            <h2>An interest form, not beta access</h2>
-            <ul class="beta-check-list">
-              <li>Tell us what reporting work you do and what you need</li>
-              <li>Never submit files or information about individual people</li>
-              <li>Use fictional or fully de-identified data only if a future beta is approved</li>
-              <li>Registering interest does not guarantee access</li>
-              <li>No one will be enrolled before the privacy and authorization gates pass</li>
-            </ul>
+            <h2>How the beta will work</h2>
+            <ol class="beta-check-list">
+              <li>Register interest using your work email and reporting preferences.</li>
+              <li>After privacy and access checks pass and the beta opens, selected testers will receive an invitation with a fictional CSV.</li>
+              <li>Use the supplied file in your browser, download the summaries and tell us which findings you would use.</li>
+            </ol>
           </aside>
         </div>
       </section>
 
       <section class="section beta-application-section" id="apply">
         <div class="section-title reveal">
-          <p class="template-label">Beta tester application</p>
-          <h2>Tell us about your reporting needs. This form is only an expression of interest.</h2>
-          <p>This application asks about your interests only. Do not attach, paste, describe, or send any customer, client, employee, student, patient, participant, or other record-level data.</p>
+          <p class="template-label">Beta interest registration</p>
+          <h2>What do you need to report?</h2>
+          <p>Share your business contact details and choose the reporting tasks you work on. Please keep all client and participant information out of this form.</p>
         </div>
 
         <div class="beta-form-layout">
           <form class="beta-application-form reveal" id="beta-application-form" action="https://formspree.io/f/xlgqqdok" method="post">
-            <input type="hidden" name="_subject" value="New ProgramMetrics beta tester application" />
+            <input type="hidden" name="_subject" value="Essential Insights beta interest" />
             <label class="beta-honeypot" aria-hidden="true">
               Leave this field blank
               <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
@@ -71,7 +68,7 @@
                 <input type="text" name="name" autocomplete="name" required maxlength="100" />
               </label>
               <label>
-                Email address <span aria-hidden="true">*</span>
+                Work email <span aria-hidden="true">*</span>
                 <input type="email" name="email" autocomplete="email" required maxlength="150" />
               </label>
               <label>
@@ -110,12 +107,25 @@
 
             <label>
               What type of spreadsheet data do you typically work with? <span aria-hidden="true">*</span>
-              <textarea name="dataType" rows="3" required maxlength="500" placeholder="For example: sales, operations, survey responses, or program performance. Describe the general category only."></textarea>
+              <select name="dataType" required>
+                <option value="">Select one</option>
+                <option>Program attendance or service counts</option>
+                <option>Survey responses</option>
+                <option>Training or outreach activity</option>
+                <option>Other or unsure</option>
+              </select>
             </label>
 
             <label>
               What part of working with spreadsheets causes the most frustration? <span aria-hidden="true">*</span>
-              <textarea name="challenge" rows="4" required maxlength="800" placeholder="For example: duplicates, missing values, cleaning, choosing analyses, building visuals, or summarizing results."></textarea>
+              <select name="challenge" required>
+                <option value="">Select one</option>
+                <option>Finding missing or inconsistent values</option>
+                <option>Summarizing numeric or categorical data</option>
+                <option>Choosing useful visuals</option>
+                <option>Explaining results</option>
+                <option>Other or unsure</option>
+              </select>
             </label>
 
             <fieldset>
@@ -131,12 +141,12 @@
 
             <label class="beta-confirmation">
               <input type="checkbox" name="feedbackAgreement" required />
-              <span>I understand this form registers interest only. It does not enroll me or provide beta access.</span>
+              <span>I agree that ProgramMetrics may email me about this beta.</span>
             </label>
 
             <label class="beta-confirmation beta-safety-confirmation">
               <input type="checkbox" name="dataAgreement" required />
-              <span>If a beta is separately approved, I will use only the authorized synthetic fixture or fully de-identified data. I will not submit names, addresses, email addresses, phone numbers, Social Security numbers, medical information, student records, payment information, confidential case notes, or other identifiable or sensitive information.</span>
+              <span>I will use only the fictional sample provided by ProgramMetrics during this beta.</span>
             </label>
 
             <label class="beta-confirmation">
@@ -144,17 +154,17 @@
               <span>I have reviewed the <a href="privacy-policy.html">Privacy &amp; Security Rules</a> and <a href="terms-of-service.html">Terms of Service</a>. I understand registration is only an expression of interest and does not guarantee selection or admission.</span>
             </label>
 
-            <p class="beta-form-note">Your interest form is processed through the listed form provider and delivered to ProgramMetrics. Do not include or send any spreadsheet, record-level information, or sensitive data.</p>
-            <p class="beta-form-error" id="beta-form-error" role="alert" hidden></p>
+            <p class="beta-form-note">Formspree delivers this registration to ProgramMetrics.</p>
+            <p class="beta-form-error" id="beta-form-error" role="alert" tabindex="-1" hidden></p>
             <p class="beta-form-success" id="beta-form-success" role="status" tabindex="-1" hidden>Thank you for registering interest in ProgramMetrics. This does not provide beta access. If a beta is approved and you are invited, we will contact you with next steps. Please do not send or upload any data.</p>
             <button class="button primary beta-submit-button" type="submit">Register Interest</button>
           </form>
 
-          <aside class="beta-safety-card reveal" aria-label="Beta application safety rules">
-            <p class="template-label">Before you apply</p>
+          <aside class="beta-safety-card reveal" aria-label="Information for prospective testers">
+            <p class="template-label">Before you register</p>
             <h3>No data files are requested.</h3>
-            <p>This form is only for beta interest and tester selection. It does not accept uploads, activate Studio, perform analysis, or create a real payment.</p>
-            <p><strong>Please do not email a spreadsheet or include record-level details in your application.</strong></p>
+            <p>Registering adds you to the interest list. Beta access requires an invitation, and testers pay nothing.</p>
+            <p><strong>Please use only the fictional sample during testing.</strong></p>
             <a class="text-link" href="security-data-use.html">Read the full Security &amp; Data Use policy</a>
           </aside>
         </div>
